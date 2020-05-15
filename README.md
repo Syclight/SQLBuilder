@@ -18,7 +18,7 @@ Open text file though VSCode. Ctrl + Shift + p open the commend line input comme
 Text file example  
 txt文件范例：  
   
->![Image text](./md/md_text_examp.bmp)  
+>![Image text](https://github.com/Syclight/SQLBuilder/blob/master/md/md_text_examp.bmp)  
 >  
 >File name is table name.  
 >文件名就是表名  
@@ -30,7 +30,7 @@ txt文件范例：
 >表外键关键词中以中文标点“，”开头和结尾，例如“xxx，user表外键，xxx”。
 
 config.json：在config.json中配置信息。
-> ![Image text](./md/md_cfg_examp.bmp)  
+> ![Image text](https://github.com/Syclight/SQLBuilder/blob/master/md/md_cfg_examp.bmp)  
 >  
 >`DBConfig`:Config database. 配置数据库的信息。  
 >`outSQLPath`:Config path,output SQL file, none means dont output SQL file. 配置输出的SQL语句文件的路径，为空则表示不输出SQL语句文件
