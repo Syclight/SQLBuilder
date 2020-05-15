@@ -1,0 +1,7 @@
+{
+    "command.sqlbuilder.hello":"hello",
+    "command.sqlbuilder.execute":"execute",
+    "command.sqlbuilder.execute_fk":"execute_fk",
+    
+    "category.sqlbuilder":"SqlBuilder"
+}
