@@ -23,9 +23,9 @@ txt文件范例：
 >![txt文件范例图](https://user-images.githubusercontent.com/42128653/82065135-49aba000-9700-11ea-908c-adee2dd91658.png)  
 >File name is table name.  
 >文件名就是表名  
->Field name,date type,comment constitutes a row, eparated by Tab. Also can copy from Word or Excel.  
+>Field name,date type,comment constitutes a row, separated by Tab. Also can copy from Word or Excel.  
 >txt文件中的一行由字段名，数据类型，备注信息组成, 中间由`Tab键`分隔，即`'\t'`。可以在Word或Excel中设计好之后复制到txt中。  
->Keyword "primary key","not null","default","foreign key"can be distinguished in comment by extension.(chinese only in this version)  
+>Keyword "primary key","not null","default","foreign key" in comment can be distinguished by extension.(chinese only in this version)  
 >在备注信息中，可识别的关键词有`“主键”`，`“非空”`，`“默认值为”`，`“表外键”`。  
 >其中，关键词`"默认值为"`以中文标点“，”结束，例如`“默认值为1，xxx”`。  
 >关键词`"表外键"`以中文标点“，”开头和结尾，例如`“xxx，user表外键，xxx”`。
