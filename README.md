@@ -10,12 +10,12 @@ Open text file though VSCode. Ctrl + Shift + p open the commend line input comme
 使用VSCode打开txt文件，然后按下Ctrl + Shift + p打开命令行，输入命令
 >* `SqlBuilder.hello`: Check configuration and be ensure the extension has run.  
 >查看当前配置,确定插件是否在被加载
->* `SqlBuilder.config`: Open config.json, restart VSCode after modified it.
+>* `SqlBuilder.config`: Open config.json, restart VSCode after modified it.  
 >打开config.js,进行修改后重启VSCode,config.js文件结构在下文中提到。
 >* `SqlBuilder.execute`: Create MySQL table though the text file.  
 >通过该文本文件创建MySQL表
 >* `SqlBuilder.execute_fk`: Add foreign key constraint after created all table.  
->在所有的表创建完成后，使用该命令添加外键约束, 确保在添加约束前所设计的表已经建好。
+>在所有的表创建完成后，使用该命令添加外键约束, 确保在添加约束前所涉及的表已经建好。
 
 Text file example  
 txt文件范例：  
@@ -27,8 +27,8 @@ txt文件范例：
 >txt文件中的一行由字段名，数据类型，备注信息组成, 中间由`Tab键`分隔，即`'\t'`。可以在Word或Excel中设计好之后复制到txt中。  
 >Keyword "primary key","not null","default","foreign key"can be distinguished in comment by extension.(chinese only in this version)  
 >在备注信息中，可识别的关键词有`“主键”`，`“非空”`，`“默认值为”`，`“表外键”`。  
->其中，关键词"默认值为"以中文标点“，”结束，例如`“默认值为1，xxx”`。  
->关键词"表外键"以中文标点“，”开头和结尾，例如`“xxx，user表外键，xxx”`。
+>其中，关键词`"默认值为"`以中文标点“，”结束，例如`“默认值为1，xxx”`。  
+>关键词`"表外键"`以中文标点“，”开头和结尾，例如`“xxx，user表外键，xxx”`。
 
 config.json：在config.json中配置信息。
 > ![config.json文件结构图](https://user-images.githubusercontent.com/42128653/82110707-02122c00-9773-11ea-89ba-3702e73e8bb8.png)  
