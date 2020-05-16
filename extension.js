@@ -61,8 +61,9 @@ function activate(context) {
 	}
 
 	let disposable = vscode.commands.registerCommand('sql-builder.hello', function () {
-		vscode.window.showInformationMessage('Hellow! Welcome to use SQLBuilder! 你好, 欢迎使用SQLBuilder');
 		vscode.window.showInformationMessage('config 配置详情:' + JSON.stringify(config));
+		vscode.window.showInformationMessage('Hellow! Welcome to use SQLBuilder! 你好, 欢迎使用SQLBuilder');
+
 	});
 
 	let execute = vscode.commands.registerCommand('sql-builder.execute', function () {

@@ -49,7 +49,7 @@
 		"pretest": "npm run lint",
 		"test": "node ./test/runTest.js"
 	},
-	"dependencies": {
+	"devDpendencies": {
 		"@types/vscode": "^1.45.0",
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",
