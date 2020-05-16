@@ -6,6 +6,7 @@
         "port": "3306",
         "database": "test"
     },
-    "outSQLPath":"./out/"
+    "outSQLPath":"",
+    "PKGenStra":"AUTO_INCREMENT"
 }
 

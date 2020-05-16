@@ -1,0 +1,9 @@
+{
+    "command.sqlbuilder.hello":"你好",
+    "command.sqlbuilder.execute":"建立数据表",
+    "command.sqlbuilder.execute_fk":"建立数据表的外键约束",
+    "command.sqlbuilder.config":"配置文件",
+    "command.sqlbuilder.refresh":"刷新",
+    
+    "category.sqlbuilder":"SqlBuilder"
+}

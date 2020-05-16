@@ -2,6 +2,8 @@
     "command.sqlbuilder.hello":"hello",
     "command.sqlbuilder.execute":"execute",
     "command.sqlbuilder.execute_fk":"execute_fk",
+    "command.sqlbuilder.config":"config",
+    "command.sqlbuilder.refresh":"refresh",
     
     "category.sqlbuilder":"SqlBuilder"
 }

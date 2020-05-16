@@ -1,4 +1,4 @@
-function TableText(flag) {
+function TableText(flag, idGenStra) {
     let rows = new Array();
     let fields = new Array();
     let __flag = flag  // 0, 全部 1，建表sql，2，外键约束sql
@@ -34,7 +34,7 @@ function TableText(flag) {
                 }
             });
         }
-        let builder = new sqlStrBuilder(fields, tableName);
+        let builder = new sqlStrBuilder(fields, tableName, idGenStra);
 
         switch (__flag) {
             case 0:
@@ -181,10 +181,10 @@ function Field(str) {
 }
 
 
-function sqlStrBuilder(fieldAry, tableName) {
+function sqlStrBuilder(fieldAry, tableName, idGenStra) {
     const CONSTR_HEAD = "CREATE TABLE "
 
-    const PK = "PRIMARY KEY AUTO_INCREMENT ";
+    const PK = "PRIMARY KEY " + idGenStra + " ";
     const notNull = "NOT NULL ";
     const def = "DEFAULT";
     const comment = "COMMENT ";

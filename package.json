@@ -1,7 +1,8 @@
 {
 	"name": "sql-builder",
-	"displayName": "SqlBuilder",
+	"displayName": "SQLBuilder",
 	"description": "Easy to build MySQL table though text file",
+	"keywords": ["mysql", "builder", "sql", "table"],
 	"version": "0.0.1",
 	"publisher": "asheor",
 	"icon": "icon/SqlBuilder.png",
@@ -15,7 +16,8 @@
 	"activationEvents": [
 		"onCommand:sql-builder.hello",
 		"onCommand:sql-builder.execute",
-		"onCommand:sql-builder.execute_fk"
+		"onCommand:sql-builder.execute_fk",
+		"onCommand:sql-builder.config"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -34,6 +36,11 @@
 				"command": "sql-builder.execute_fk",
 				"title": "%command.sqlbuilder.execute_fk%",
 				"category": "%category.sqlbuilder%"
+			},
+			{
+				"command": "sql-builder.config",
+				"title": "%command.sqlbuilder.config%",
+				"category": "%category.sqlbuilder%"
 			}
 		]
 	},
@@ -42,7 +49,7 @@
 		"pretest": "npm run lint",
 		"test": "node ./test/runTest.js"
 	},
-	"devDependencies": {
+	"dependencies": {
 		"@types/vscode": "^1.45.0",
 		"@types/glob": "^7.1.1",
 		"@types/mocha": "^7.0.2",

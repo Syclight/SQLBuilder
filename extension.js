@@ -60,14 +60,14 @@ function activate(context) {
 
 	}
 
-
 	let disposable = vscode.commands.registerCommand('sql-builder.hello', function () {
-		vscode.window.showInformationMessage('Welcome to use SqlBuilder!');
+		vscode.window.showInformationMessage('Hellow! Welcome to use SQLBuilder! 你好, 欢迎使用SQLBuilder');
+		vscode.window.showInformationMessage('config 配置详情:' + JSON.stringify(config));
 	});
 
 	let execute = vscode.commands.registerCommand('sql-builder.execute', function () {
 		let errorRow = null;
-		let tableText = new TableText(1);
+		let tableText = new TableText(1, config.PKGenStra);
 		const res = getAllText();
 
 		tableText.create(res[1], res[0]);
@@ -83,7 +83,7 @@ function activate(context) {
 
 	let executeFk = vscode.commands.registerCommand('sql-builder.execute_fk', function () {
 		let errorRow = null;
-		let tableText = new TableText(2);
+		let tableText = new TableText(2, config.PKGenStra);
 		const res = getAllText();
 
 		tableText.create(res[1], res[0]);
@@ -97,9 +97,19 @@ function activate(context) {
 		dbProcess(tableText.getSqlFKAry(), res[0]);
 	});
 
+	let showConfig = vscode.commands.registerCommand('sql-builder.config', function () {
+		console.log(config);
+		const options = {
+			preview: false,
+			viewColumn: vscode.ViewColumn.Two
+		};
+		vscode.window.showTextDocument(vscode.Uri.file(__dirname + '/config.json'), options);
+	});
+
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(execute);
 	context.subscriptions.push(executeFk);
+	context.subscriptions.push(showConfig);
 }
 exports.activate = activate;
 
