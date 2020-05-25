@@ -3,7 +3,7 @@
 	"displayName": "SQLBuilder",
 	"description": "Easy to build MySQL table though text file",
 	"keywords": ["mysql", "builder", "sql", "table"],
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "asheor",
 	"icon": "icon/SqlBuilder.png",
 	"repository": {},
