@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 
 class DataBase {
-    constructor(configJson) {
+    constructor() {
         this.connection = null;
     }
 
@@ -10,23 +10,14 @@ class DataBase {
         this.connection.connect();
     }
 
-    execute(sqlStr){
-        let res;
-        this.connection.query(sqlStr, function (err, result) {
-            if (err) {
-                throw err;
-            }
-            res = result;
-        });
-        
-        return res; 
+    execute(sqlStr) {
+        this.connection.query(sqlStr);
     }
 
     close() {
         if (this.connection != null) {
             this.connection.end()
         }
-
     }
 }
 

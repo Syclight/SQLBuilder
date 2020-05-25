@@ -3,7 +3,10 @@
     "command.sqlbuilder.execute":"execute",
     "command.sqlbuilder.execute_fk":"execute_fk",
     "command.sqlbuilder.config":"config",
-    "command.sqlbuilder.refresh":"refresh",
+    "command.sqlbuilder.example":"example",
+    "command.sqlbuilder.dir": "dir",
+    "command.sqlbuilder.excdir": "excdir",
+    "command.sqlbuilder.excdir_fk": "excdir_fk",
     
     "category.sqlbuilder":"SqlBuilder"
 }

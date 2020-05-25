@@ -17,7 +17,11 @@
 		"onCommand:sql-builder.hello",
 		"onCommand:sql-builder.execute",
 		"onCommand:sql-builder.execute_fk",
-		"onCommand:sql-builder.config"
+		"onCommand:sql-builder.config",
+		"onCommand:sql-builder.example",
+		"onCommand:sql-builder.dir",
+		"onCommand:sql-builder.excdir",
+		"onCommand:sql-builder.excdir_fk"
 	],
 	"main": "./extension.js",
 	"contributes": {
@@ -40,6 +44,26 @@
 			{
 				"command": "sql-builder.config",
 				"title": "%command.sqlbuilder.config%",
+				"category": "%category.sqlbuilder%"
+			},
+			{
+				"command": "sql-builder.example",
+				"title": "%command.sqlbuilder.example%",
+				"category": "%category.sqlbuilder%"
+			},
+			{
+				"command": "sql-builder.dir",
+				"title": "%command.sqlbuilder.dir%",
+				"category": "%category.sqlbuilder%"
+			},
+			{
+				"command": "sql-builder.excdir",
+				"title": "%command.sqlbuilder.excdir%",
+				"category": "%category.sqlbuilder%"
+			},
+			{
+				"command": "sql-builder.excdir_fk",
+				"title": "%command.sqlbuilder.excdir_fk%",
 				"category": "%category.sqlbuilder%"
 			}
 		]

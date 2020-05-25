@@ -1,0 +1,11 @@
+UserId	int(10)	用户的Id号，主键，主键自增
+UserRegName	varchar(20)	用户的用户名，非空
+UserName	varchar(225)	用户的姓名，长度为20个字节，非空
+UserPassword	varchar(20)	用户密码，长度为20个字节非空
+UserAge	int(3)	用户年龄，长度为3个字节，非空
+UserSex	varchar(1)	用户性别，0，女1，男 ，非空
+RegTime	timestamp	注册时间，由数据库系统自动获取，默认值为CURRENT_TIMESTAMP
+StateId	int(10)	用户的状态，state_table表外键，详情见状态表
+PhoneNum	varchar(11)	电话号码，非空
+Email	varchar(30)	电子邮箱地址，非空
+RoleId	int(10)	用户角色，role_table表外键，详见角色表

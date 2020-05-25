@@ -1,9 +1,12 @@
 {
     "command.sqlbuilder.hello":"你好",
-    "command.sqlbuilder.execute":"建立数据表",
+    "command.sqlbuilder.execute":"创建数据表",
     "command.sqlbuilder.execute_fk":"建立数据表的外键约束",
     "command.sqlbuilder.config":"配置文件",
-    "command.sqlbuilder.refresh":"刷新",
+    "command.sqlbuilder.example":"示例",
+    "command.sqlbuilder.dir": "选择目录，目录中的所有txt将会被视为可处理的文件",
+    "command.sqlbuilder.excdir": "创建加载的路径下所有txt对应的数据表",
+    "command.sqlbuilder.excdir_fk": "建立加载的路径下所有数据表的外键约束",
     
     "category.sqlbuilder":"SqlBuilder"
 }

@@ -1,7 +1,6 @@
-function TableText(flag, idGenStra) {
+function TableText() {
     let rows = new Array();
     let fields = new Array();
-    let __flag = flag  // 0, 全部 1，建表sql，2，外键约束sql
 
     let tableName = "";
 
@@ -20,13 +19,13 @@ function TableText(flag, idGenStra) {
         tableName = name;
     }
 
-    this.excute = () => {
+    this.execute = (flag, idGenStra) => {
         if (rows.length > 0) {
             rows.forEach(row => {
                 if (row != " " && row != "") {
                     try {
                         let field = new Field(row);
-                        field.excute();
+                        field.execute();
                         fields.push(field);
                     } catch (error) {
                         return row;
@@ -36,7 +35,7 @@ function TableText(flag, idGenStra) {
         }
         let builder = new sqlStrBuilder(fields, tableName, idGenStra);
 
-        switch (__flag) {
+        switch (flag) {
             case 0:
                 builder.excuteCon();
                 sqlConStr = builder.getSqlConStr();
@@ -56,6 +55,10 @@ function TableText(flag, idGenStra) {
         }
 
         return null;
+    }
+
+    this.getTableName = () => {
+        return tableName;
     }
 
     this.getSqlConStr = () => {
@@ -171,7 +174,7 @@ function Field(str) {
         }
     }
 
-    this.excute = () => {
+    this.execute = () => {
         let len = this.comment.length
         this.execPK_NN(len);
         this.execDefault(len);
